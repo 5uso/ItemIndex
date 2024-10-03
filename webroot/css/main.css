@@ -1,0 +1,284 @@
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    padding: 0.1vh;
+    text-align: center;
+    background: rgb(178, 255, 164);
+    transition: all 0.6s ease;
+    height: 5vh;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: x-large;
+    margin-bottom: 2vh;
+
+    font-family: 'Minecraft';
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 0.5vh;
+    height: 1.4vh;
+    font-family: 'Minecraft';
+    font-size: 1.4vh;
+    overflow: hidden;
+    text-align: end;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    pointer-events: none;
+    user-select: none;
+}
+
+.main_section {
+    display: inline-block;
+    height: 89vh;
+    overflow-y: scroll;
+    transition: all 0.6s ease;
+}
+
+.main_section:nth-child(1) {
+    width: 20%;
+    min-width: 350px;
+    background-color: rgba(195, 239, 255, 0.963);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main_section:nth-child(2) {
+    width: 80%;
+    background-color: rgb(217, 176, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main_div {
+    display: flex;
+}
+
+.margin {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.form_section {
+    float: left;
+    transition: all 0.6s ease;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.item_img {
+    position: relative;
+    top: 0%;
+    float: left;
+    height: 120px;
+    width: 120px;
+    image-rendering: pixelated;
+    padding-right: 25px;
+    padding-bottom: 600px;
+}
+
+.vertical_center {
+    position: relative;
+    top: 25%;
+}
+
+.save_button {
+    float: right;
+}
+
+.copy_button {
+    float: right;
+    margin-right: 10px;
+}
+
+.form_area {
+    display: inline-block;
+    background-color: #00000022;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.location_button {
+    float: right;
+    margin-right: 5px;
+}
+
+.item_entry {
+    min-height: 68px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin: 5px;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+    overflow: auto;
+}
+
+.item_entry:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.item_entry_img {
+    float: left;
+    height: 64px;
+    width: 64px;
+    margin: 2px;
+    image-rendering: pixelated;
+}
+
+.item_entry_name {
+    display: inline-block;
+    background-color: #100010d0;
+    padding: 8px;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #260652;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    font-family: 'Minecraft';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.item_entry_creator {
+    display: inline-block;
+    padding: 5px;
+}
+
+.item_entry_remove {
+    float: right;
+    background-color: #00000020;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+}
+
+.item_entry_tier {
+    float: right;
+    padding: 5px;
+}
+
+.item_entry_remove:hover {
+    background-color: #ff5959;
+}
+
+.list_filter {
+    background-color:rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#enchant_list {
+    width: 295px;
+    height: 375px;
+    overflow-y: scroll;
+}
+
+#attribute_list {
+    width: 295px;
+    height: 375px;
+    overflow-y: scroll;
+}
+
+#location_list {
+    width: 620px;
+    height: 225px;
+    overflow-y: scroll;
+}
+
+#item_list {
+    position: relative;
+}
+
+#add_item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #00000022;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.main_section:nth-child(2)::-webkit-scrollbar-track {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main_section:nth-child(2)::-webkit-scrollbar-thumb {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/Minecraft-Regular.woff2') format('woff2'),
+         url('../fonts/Minecraft-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.login_main_div {
+    display: inline-block;
+    height: 88vh;
+    transition: all 0.6s ease;
+}
+
+.login_area {
+    width: 20%;
+    min-width: 200px;
+    background-color: rgba(195, 239, 255, 0.963);
+    border-radius: 10px;
+    left: 40%;
+    top: 30%;
+    position: absolute;
+    text-align: center;
+}
+
+.login_label {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.login_input {
+    width: 90%;
+}
+
+.login_button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tiny {
+    font-size: 10px;
+}
